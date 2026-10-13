@@ -22,12 +22,15 @@ jobs:
       - name: Validate references
         run: python scripts/validate.py
       - name: Check JavaScript syntax
-        run: find simple-* strength-* trust-* modern-* craftsman-* -name '*.js' -print0 | xargs -0 -n1 node --check
+        run: |
+          find simple-* strength-* trust-* modern-* craftsman-* -name '*.js' -print0 | xargs -0 -n1 node --check
+          node --check nexterra-guide.js
       - name: Prepare public files
         run: |
           mkdir _site
           cp -R simple-* strength-* trust-* modern-* craftsman-* _site/
-          cp index.html 404.html CNAME .nojekyll _site/
+          cp index.html 404.html CNAME .nojekyll nexterra-guide.js _site/
+          python scripts/add-guide.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
