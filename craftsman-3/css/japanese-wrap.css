@@ -1,0 +1,141 @@
+/* 日本語を文字単位で不自然に落とさず、文節に近い位置で折り返す共通ルール */
+html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hyphens:none}
+
+/* 回転・影・疑似要素などの装飾で横スクロール領域が広がらないようにする。
+   ページ本体は常にビューポート幅いっぱいを使う。 */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+.site-header,main,.site-footer{width:100%;max-width:100%}
+main>section{width:100%;max-width:100%}
+
+@supports (word-break:auto-phrase){
+  html[lang="ja"],body{word-break:auto-phrase}
+  p,li,dt,dd,label,.hero-copy p,.hero-note p,.philosophy-copy p,.note-card p,.person-copy p,.page-hero-copy p,.message-copy p,.service-note p,.service-note aside,.business-copy p,.contact-note p,.form-note{word-break:auto-phrase;text-wrap:pretty}
+  h1,h2,h3,.section-title{word-break:auto-phrase;text-wrap:balance}
+}
+
+.jp-flow{line-break:strict;overflow-wrap:normal;hyphens:none}
+
+/* 大きなH1/H2は、HTMLで指定した .jp-phrase を一つの塊として扱う。
+   横幅に余裕があれば同じ行に並び、入らなくなった時だけ wbr の位置で塊ごと次行へ送る。
+   これによりPC/タブレット/スマホで改行位置が文字途中に散らばりにくくなる。 */
+h1.jp-flow,
+h2.jp-flow{
+  max-width:100%;
+  min-width:0;
+}
+h1.jp-flow .jp-phrase,
+h2.jp-flow .jp-phrase{
+  display:inline-block;
+  max-width:100%;
+  white-space:normal;
+  word-break:keep-all;
+  vertical-align:baseline;
+}
+/* 外側の意味の塊を優先し、塊自体がカラムを超える場合だけ内側の意味区切りで折り返す。 */
+h1.jp-flow .jp-part,
+h2.jp-flow .jp-part{display:inline-block;white-space:nowrap}
+h1.jp-flow wbr,
+h2.jp-flow wbr{display:inline}
+
+/* 本文など、見出し以外の .jp-flow はブラウザの自然な日本語改行を使う。 */
+@supports not (word-break:auto-phrase){
+  .jp-flow:not(h1):not(h2){word-break:normal}
+  .jp-flow:not(h1):not(h2) .jp-phrase{display:inline;max-width:none;white-space:normal}
+  .jp-flow:not(h1):not(h2) wbr{display:inline}
+}
+@supports (word-break:auto-phrase){
+  .jp-flow:not(h1):not(h2) .jp-phrase{display:inline;max-width:none;white-space:normal}
+  .jp-flow:not(h1):not(h2) wbr{display:none}
+}
+
+/* PCでは文字サイズは元のデザイン設定を使い、文字側カラムの実幅だけを広げる。
+   改行ポイント（.jp-phrase / wbr）は変更しない。 */
+@media(min-width:981px){
+  /* 大画面PCでは1180pxで頭打ちにせず、余っている横幅を活用する */
+  :root{--max:1280px}
+
+  /* トップ：写真側に寄りすぎていた比率を戻し、見出し側を広げる */
+  .hero-journal{
+    grid-template-columns:minmax(0,1.08fr) minmax(400px,.92fr);
+    gap:42px;
+  }
+
+  /* 人柄紹介：右の文章カラムを広げ、左右余白も少し詰める */
+  .person-story-grid{
+    grid-template-columns:minmax(0,.92fr) minmax(460px,1.08fr);
+  }
+  .person-copy{
+    padding:48px 30px;
+  }
+  .person-copy-inner{
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
+
+  /* 事業内容：写真より文章側を広めに取る */
+  .business-feature{
+    grid-template-columns:minmax(0,.9fr) minmax(500px,1.1fr);
+  }
+  .business-copy{
+    padding:48px 34px;
+  }
+  .business-copy-inner{
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
+}
+
+/* 既存のスマホ用文字サイズは維持。余白・カラム幅・意味区切りで横はみ出しを防ぐ。 */
+@media(max-width:720px){
+  p,li,dt,dd,label{max-width:100%}
+
+  .business-copy,
+  .business-copy-inner,
+  .person-copy,
+  .person-copy-inner,
+  .message-copy,
+  .service-note>div:last-child{
+    width:100%;
+    min-width:0;
+    max-width:100%;
+  }
+
+  .business-copy p,
+  .person-copy p,
+  .message-copy p,
+  .service-note p,
+  .service-note aside,
+  .lead,
+  .sample-note{
+    max-width:100%;
+    word-break:normal;
+    overflow-wrap:break-word;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(30px,8.4vw,38px);
+    line-height:1.4;
+    letter-spacing:0;
+  }
+
+  .section-title,
+  .philosophy-copy h2,
+  .message-copy h2,
+  .person-copy h2,
+  .business-copy h2{
+    max-width:100%;
+    font-size:clamp(22px,7vw,34px);
+    line-height:1.5;
+  }
+
+  .cta h2{
+    max-width:100%;
+    font-size:clamp(22px,7vw,32px);
+    line-height:1.5;
+  }
+}
+
+.hero-journal>*,.hero-meta>*,.philosophy-grid>*,.work-note-head>*,.note-card,.person-story-grid>*,.page-hero-inner>*,.message-grid>*,.profile-row>*,.service-note>*,.business-feature>*,.business-facts>*,.contact-wrap>*,.form-row>*,.cta-inner>*{min-width:0}

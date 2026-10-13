@@ -1,0 +1,626 @@
+{
+  "date": "2026-10-13",
+  "backupBranch": "backup/pre-migration-20261013",
+  "destinationBefore": "12b4c3260a52b017317cb549a00d9c0aa7298df5",
+  "samples": [
+    {
+      "folder": "craftsman-1",
+      "repository": "pan1535ipad/craftsman-sample",
+      "commit": "14915829512bc5ce33448e570d56e34189a9f8ed",
+      "tree": "6bffba33f9ae3d923d70b92d762fe57a2035e626",
+      "files": [
+        {
+          "path": "404.html",
+          "sha": "b5b0e4b88a543c57f4b79447a6c72612e0945e40",
+          "size": 1663
+        },
+        {
+          "path": "about.html",
+          "sha": "4684f37db1c4976a4d318ecb452844a83e9f1448",
+          "size": 6714
+        },
+        {
+          "path": "assets/craftsman-hero.jpg",
+          "sha": "d342b4c705da513970d9ae6cb1c361d52d55ac23",
+          "size": 186405
+        },
+        {
+          "path": "business.html",
+          "sha": "3b37c04b762e5ae2e4243939f1164f732b61036b",
+          "size": 10549
+        },
+        {
+          "path": "contact.html",
+          "sha": "0a67963665adc1ed49c787140c0807d87a2cff01",
+          "size": 6441
+        },
+        {
+          "path": "favicon-craft.svg",
+          "sha": "c8ed4af2f0fe3e214f383d2e73d1990a6925157d",
+          "size": 310
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "b5ca917fec0e9b4245f66e4ce364599029431711",
+          "size": 243
+        },
+        {
+          "path": "index.html",
+          "sha": "01d3b32c386c470ea5aab4665845823fdcc6bb48",
+          "size": 9959
+        },
+        {
+          "path": "script.js",
+          "sha": "e9a4f02fc3ca2de3fd118335fdb694c2eee04338",
+          "size": 11138
+        },
+        {
+          "path": "style.css",
+          "sha": "0cb3aafe035f0b83b47f86dfbe515b514272fa3c",
+          "size": 34805
+        }
+      ]
+    },
+    {
+      "folder": "craftsman-2",
+      "repository": "pan1535ipad/craftsman-sample2",
+      "commit": "c4c0675a0d4ae346ec5c8287f7b5d4c3cffde070",
+      "tree": "419ba457f9a2901cdf11b1f9c9990e693096dc93",
+      "files": [
+        {
+          "path": "company.html",
+          "sha": "77e456088839fdde40fea0f151fbbc7da5e690e3",
+          "size": 4328
+        },
+        {
+          "path": "contact.html",
+          "sha": "4497b31451189aefbe9ca529173f0b9e6527b490",
+          "size": 3961
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "0f20b09a105895b391e16302beb2ddff9578ddd8",
+          "size": 229
+        },
+        {
+          "path": "index.html",
+          "sha": "14e404cd68c784d12286c0f332fc7a82803f10a2",
+          "size": 6379
+        },
+        {
+          "path": "script.js",
+          "sha": "0de49a4ced56e8a5f674b8f11bf7ec70ab5157c8",
+          "size": 4095
+        },
+        {
+          "path": "services.html",
+          "sha": "73bab8f55259df073b377e91736bb4bd76102992",
+          "size": 5844
+        },
+        {
+          "path": "style.css",
+          "sha": "0b924d820c06c9b03ceb889c8261113e60c6823d",
+          "size": 16482
+        }
+      ]
+    },
+    {
+      "folder": "craftsman-3",
+      "repository": "bluebird568976-maker/syoubousekou",
+      "commit": "04d658133eb05c3fc546a42434a1cd479779fcf4",
+      "tree": "656c53f5f7dff82c9467b6dfa6d6c4b355ef78ab",
+      "files": [
+        {
+          "path": "about.html",
+          "sha": "e4122b47f8f52502703b3fe202cf67470f963666",
+          "size": 6846
+        },
+        {
+          "path": "assets/logo.svg",
+          "sha": "3fa7fd5da28dcb7a7f3ea54566eee3d371cb9470",
+          "size": 876
+        },
+        {
+          "path": "business.html",
+          "sha": "955ccc2ffb1ab5986edbb789ee65a2a82fc23bd8",
+          "size": 5298
+        },
+        {
+          "path": "contact.html",
+          "sha": "a8e9a881e3e7d67fcbea77cef0e77a0495cde083",
+          "size": 5306
+        },
+        {
+          "path": "css/craft-layout.css",
+          "sha": "99985a93c22915a4a479d56b865e95b8106ba645",
+          "size": 25983
+        },
+        {
+          "path": "css/japanese-wrap.css",
+          "sha": "a4cb4fea80b5c9b6acd5b6d3f06e42e656f67360",
+          "size": 4677
+        },
+        {
+          "path": "index.html",
+          "sha": "11cb834e1ec661c2c645b132092e9b55396b425f",
+          "size": 10054
+        },
+        {
+          "path": "js/main.js",
+          "sha": "0b2a884e7f99e3604139ea47fc6137c722b1f51b",
+          "size": 684
+        },
+        {
+          "path": "service.html",
+          "sha": "441e92b0053c8272eebbad9177efc55f66ddc574",
+          "size": 5872
+        }
+      ]
+    },
+    {
+      "folder": "modern-1",
+      "repository": "pan1535ipad/modern-sample",
+      "commit": "bfe34ae1e59debee00bacb19124b655a648ce98d",
+      "tree": "97fe32cc0b71bbfc5f51eac43c8685dc0c3bd70e",
+      "files": [
+        {
+          "path": "404.html",
+          "sha": "bc84fbdd76207ae2043c51f06bb5eee074055b3b",
+          "size": 1470
+        },
+        {
+          "path": "assets/modern-hero.jpg",
+          "sha": "f7455df4c7469faa86edac3e00689ea36baea4b8",
+          "size": 140396
+        },
+        {
+          "path": "assets/ogp.jpg",
+          "sha": "1541dd52bf928b9ecee2f2b38b5cf4ff721393fb",
+          "size": 98720
+        },
+        {
+          "path": "company.html",
+          "sha": "4b5ef8a1f6a3b1ec332bd8eee0b000b05eee20f9",
+          "size": 6611
+        },
+        {
+          "path": "contact.html",
+          "sha": "c7aa844a0f7686d2b54a3cccb0ce62bd513b474f",
+          "size": 5799
+        },
+        {
+          "path": "favicon-electric.svg",
+          "sha": "30fa441046a108b8680e7c4b19ce89fa43202daf",
+          "size": 269
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "b6a0a15930fec22b2e55efd9b8130e44a8ea113f",
+          "size": 209
+        },
+        {
+          "path": "index.html",
+          "sha": "f21b5c2719daf01aac77482fb35653a940502324",
+          "size": 9927
+        },
+        {
+          "path": "script.js",
+          "sha": "7d9c26e39d2496454355c99817295627a16a3ecd",
+          "size": 6406
+        },
+        {
+          "path": "services.html",
+          "sha": "45f907425d62ee8bf45d83a3d9c1d83028486201",
+          "size": 7784
+        },
+        {
+          "path": "styles.css",
+          "sha": "6011db652230b4cfa4864bd1e614af93f3bdf2f5",
+          "size": 26231
+        }
+      ]
+    },
+    {
+      "folder": "modern-2",
+      "repository": "pan1535ipad/modern-sample2",
+      "commit": "3b8b87e0f0de3a02ac74f74dcb4c6fba5c7e4cbe",
+      "tree": "fb632ed38b824cfb3e821f9d403f7b4e15b835cc",
+      "files": [
+        {
+          "path": "company.html",
+          "sha": "1412beb19770d2e00d8865fdc62ca42f1e17de84",
+          "size": 4618
+        },
+        {
+          "path": "contact.html",
+          "sha": "7509f0a556d657cce574ed52060dc525362e4d3f",
+          "size": 3705
+        },
+        {
+          "path": "editorial-modern.css",
+          "sha": "af404217a35a96596c34a2b0c95b6a19b7f52db9",
+          "size": 21151
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "48e672501688d39e96b7b9ce3ab906c8b2b4c087",
+          "size": 302
+        },
+        {
+          "path": "index.html",
+          "sha": "cc565cc2e855260c46407e65554d2bcebc1173cf",
+          "size": 6823
+        },
+        {
+          "path": "script.js",
+          "sha": "774f077771ba6344917619fbb58805d2eeef45c0",
+          "size": 4025
+        },
+        {
+          "path": "services.html",
+          "sha": "40bc6cb71afed140187b5b99bbe73f1f3758680c",
+          "size": 5700
+        },
+        {
+          "path": "sidebar-layout-v2.css",
+          "sha": "a6e1fc496a36a69d34d03fa92d91ac9cd5ecdb5e",
+          "size": 14059
+        },
+        {
+          "path": "sidebar-layout.css",
+          "sha": "a537d86e999f9a714e9d599b53323e4907b64e08",
+          "size": 13812
+        },
+        {
+          "path": "style.css",
+          "sha": "a537d86e999f9a714e9d599b53323e4907b64e08",
+          "size": 13812
+        }
+      ]
+    },
+    {
+      "folder": "simple-1",
+      "repository": "pan1535ipad/simple-sample",
+      "commit": "85a91eb5a8644bb7d20266859f4ed15f4f27a6d2",
+      "tree": "38cf7be27dfd1b9423dd9b14fec9baf968fb7535",
+      "files": [
+        {
+          "path": "404.html",
+          "sha": "4fb102a90cf28d00c337405247a7269ab19019bf",
+          "size": 669
+        },
+        {
+          "path": "assets/favicon-wall.svg",
+          "sha": "f47641a0cac6d881616c65893b4e410605b38f90",
+          "size": 293
+        },
+        {
+          "path": "assets/favicon.svg",
+          "sha": "1c5f2b65198d51fd39f86a7a8742362dbda1b045",
+          "size": 348
+        },
+        {
+          "path": "assets/script.js",
+          "sha": "bd9c23cf2133ff38c7bdde4a819d53a5373ce899",
+          "size": 2503
+        },
+        {
+          "path": "assets/style.css",
+          "sha": "7cf9f9e3f984abbaa53d6ec942550e513aeb8f32",
+          "size": 16122
+        },
+        {
+          "path": "company.html",
+          "sha": "95705bc8d944979ccf2f60f2496883531c46213e",
+          "size": 4843
+        },
+        {
+          "path": "contact.html",
+          "sha": "05f06a6a9f4e87aceb44388e27a7926069f4a99e",
+          "size": 3391
+        },
+        {
+          "path": "index.html",
+          "sha": "c4b72e21abf42f36cd7117f19eb556dee676042e",
+          "size": 10786
+        },
+        {
+          "path": "service.html",
+          "sha": "0dcad2bd975a34e97e05ece88aa54f48a12f1a58",
+          "size": 7483
+        }
+      ]
+    },
+    {
+      "folder": "simple-2",
+      "repository": "bluebird568976-maker/setubi",
+      "commit": "f6d0509f4949d03162d4a488dfd5570876668980",
+      "tree": "df924c1eeee6456f092f356a067f02d44da5cd91",
+      "files": [
+        {
+          "path": "about.html",
+          "sha": "27bddd02b49195a36b9189cd5c89ebcff027edd6",
+          "size": 5766
+        },
+        {
+          "path": "assets/hero-equipment.svg",
+          "sha": "18ee26cda03a664ebee3e460a5750c96a8c659a7",
+          "size": 3300
+        },
+        {
+          "path": "assets/logo.svg",
+          "sha": "e7f64bf213f28c89b772b02030c09781424a884d",
+          "size": 1050
+        },
+        {
+          "path": "contact.html",
+          "sha": "c7c3b9d363669974496a17c0784e56eb4e599ff3",
+          "size": 4397
+        },
+        {
+          "path": "css/japanese-wrap.css",
+          "sha": "1304ba8f20227c8f64b7d215245c998c5e40b4b0",
+          "size": 1852
+        },
+        {
+          "path": "css/style.css",
+          "sha": "08e69ad1d0e82009b0459a7c105c22e85d998c55",
+          "size": 14399
+        },
+        {
+          "path": "index.html",
+          "sha": "874acef09d20a231e90831d352783ba923879624",
+          "size": 7298
+        },
+        {
+          "path": "js/main.js",
+          "sha": "eb4f04eb9a73e1f402e3a9671ebaff79708949c2",
+          "size": 1152
+        },
+        {
+          "path": "service.html",
+          "sha": "b1a7fb39a4cf86714ff499b6515cb33a0defc0e8",
+          "size": 5497
+        }
+      ]
+    },
+    {
+      "folder": "strength-1",
+      "repository": "pan1535ipad/strength-sample",
+      "commit": "b606a0b35d78d3418d3cc1a40bb36f57002b97f7",
+      "tree": "741ceb9a1fe017288dd47d5609d9e3aaf4c9a1c1",
+      "files": [
+        {
+          "path": "404.html",
+          "sha": "b9bb7c513941184eed9fd17b7b667a657852bc5f",
+          "size": 1386
+        },
+        {
+          "path": "assets/hero-equipment.jpg",
+          "sha": "65a2c147c5c6148ede8b867984295cf229ab9dc1",
+          "size": 179975
+        },
+        {
+          "path": "assets/ogp.jpg",
+          "sha": "ed7dd1087b8d93f25c805fe545b523087326f6b1",
+          "size": 110636
+        },
+        {
+          "path": "company.html",
+          "sha": "d4d683a8ef9bc55994a058f73556a10261c7e986",
+          "size": 6528
+        },
+        {
+          "path": "contact.html",
+          "sha": "0678c17bb8afda904ee75e33d4ede6587e8a9fe3",
+          "size": 5793
+        },
+        {
+          "path": "favicon-plumbing.svg",
+          "sha": "8dcd492fb54d21133db9b1552d845784702a8b27",
+          "size": 296
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "c77c04782544e7c054c6d1e0cbb7cc75c758449d",
+          "size": 423
+        },
+        {
+          "path": "index.html",
+          "sha": "a26d56c191bc0222a3449b0261f209993bf3bdc0",
+          "size": 10053
+        },
+        {
+          "path": "script.js",
+          "sha": "baadb8808a18b2eb5a68cdc4523b9e950abe3d75",
+          "size": 6266
+        },
+        {
+          "path": "services.html",
+          "sha": "0137728aff263a3471f215d1323e839178f312d8",
+          "size": 7964
+        },
+        {
+          "path": "styles.css",
+          "sha": "f704bf7325d354f2366cdcd43428fc41008325ed",
+          "size": 23189
+        }
+      ]
+    },
+    {
+      "folder": "strength-2",
+      "repository": "bluebird568976-maker/suidouhaikan",
+      "commit": "78dc242d9e71236499896329d4241200580a7d79",
+      "tree": "b5f0cd1e5564d9a7f9af8c5f2c16c5d4eab8d067",
+      "files": [
+        {
+          "path": "about.html",
+          "sha": "e247a1281716fc8d82cd716ba557c731aa1b36ea",
+          "size": 5027
+        },
+        {
+          "path": "assets/logo.svg",
+          "sha": "e778aa52167c75e9410b90e49cbe04d09bb97f7d",
+          "size": 1266
+        },
+        {
+          "path": "business.html",
+          "sha": "fd4ec195e23360694510ae2c737b9806b307dcf8",
+          "size": 4935
+        },
+        {
+          "path": "contact.html",
+          "sha": "238a0952881f5acdeceb277bfe0104a478266258",
+          "size": 4286
+        },
+        {
+          "path": "css/japanese-wrap.css",
+          "sha": "19a5693e323d268d14c958c243b027d81b7811e5",
+          "size": 1178
+        },
+        {
+          "path": "css/photo-cut-fix.css",
+          "sha": "108e441fcdcf3b236a865b333be8eecaa4800a8b",
+          "size": 874
+        },
+        {
+          "path": "css/style.css",
+          "sha": "3034e808045d8466ab6e4ef230263069ec7fc82c",
+          "size": 18272
+        },
+        {
+          "path": "index.html",
+          "sha": "3f6a90c027ffdac1a30488cb23b2460d401a068c",
+          "size": 6851
+        },
+        {
+          "path": "js/main.js",
+          "sha": "0b2a884e7f99e3604139ea47fc6137c722b1f51b",
+          "size": 684
+        },
+        {
+          "path": "service.html",
+          "sha": "c4a79d0523612ef2b39dd075993a8e6063f37e8b",
+          "size": 5168
+        }
+      ]
+    },
+    {
+      "folder": "trust-1",
+      "repository": "pan1535ipad/trust-sample",
+      "commit": "396c1a2ae2a6fb1d33185d191abaca202cc206b2",
+      "tree": "e9e659b33d162d962419cd6a4c12400a6c114c47",
+      "files": [
+        {
+          "path": "404.html",
+          "sha": "14cf5330bfc16ea205652ce795f9a88105b9c3b9",
+          "size": 1370
+        },
+        {
+          "path": "about.html",
+          "sha": "3956f2f72b0eefd97e52c3dd8d444d90e1c4497a",
+          "size": 8831
+        },
+        {
+          "path": "assets/trust-hero.jpg",
+          "sha": "5f3905dc4e5870b062aa9d44f9d84a011e4714c1",
+          "size": 234911
+        },
+        {
+          "path": "business.html",
+          "sha": "9e1579ce162fe5b65a1feed250b529df932e6e94",
+          "size": 13898
+        },
+        {
+          "path": "contact.html",
+          "sha": "b8208d23709eeb64e1e833c298cbe35d8f44ff81",
+          "size": 10157
+        },
+        {
+          "path": "favicon-home.svg",
+          "sha": "9cd21463f628dc493f29f6c24ec09658a0e67144",
+          "size": 308
+        },
+        {
+          "path": "favicon.svg",
+          "sha": "063c9d6a392797c24ff15af9b0ab7a6154892c1c",
+          "size": 266
+        },
+        {
+          "path": "index.html",
+          "sha": "0f5434599ccaed6fcdb56e054b89d11ab94e5e1e",
+          "size": 14467
+        },
+        {
+          "path": "script.js",
+          "sha": "29431e69d84bdfa08d1f873e8dd49bd360e9739d",
+          "size": 11844
+        },
+        {
+          "path": "style.css",
+          "sha": "e4e56c5d3c2ebed59d521ab27837665657e436de",
+          "size": 41030
+        }
+      ]
+    },
+    {
+      "folder": "trust-2",
+      "repository": "bluebird568976-maker/suidousetubi",
+      "commit": "8bb1d9d16a5dc49163f87b520d34444bd273fdb1",
+      "tree": "c7154eefa424d2c62761f62c01f35a0c29fd6372",
+      "files": [
+        {
+          "path": "about.html",
+          "sha": "b1004f815109da4a4865d5c449184e4e94f7812c",
+          "size": 5206
+        },
+        {
+          "path": "assets/logo.svg",
+          "sha": "2464fe597c300b7d0c1e92aa62a6225a99c09e01",
+          "size": 1072
+        },
+        {
+          "path": "assets/piping-diagram.svg",
+          "sha": "d42b7cea7e456d0778f466fb776427d11427f071",
+          "size": 2307
+        },
+        {
+          "path": "business.html",
+          "sha": "5a309b90a2152b504c72ed0db68c62a5a623fa66",
+          "size": 5625
+        },
+        {
+          "path": "contact.html",
+          "sha": "774faa2637ef66facc5eee538d10cbb5cd0a14e6",
+          "size": 4161
+        },
+        {
+          "path": "css/japanese-wrap.css",
+          "sha": "c1163c2f926217c14999a928b3fc7067aab034fb",
+          "size": 3853
+        },
+        {
+          "path": "css/style.css",
+          "sha": "865ae67d19d4f8f94333005b5416b2605ae8fd62",
+          "size": 16245
+        },
+        {
+          "path": "index.html",
+          "sha": "5f200ca5d2cfd65f87c0c63effe7bc1c7b409507",
+          "size": 7272
+        },
+        {
+          "path": "js/main.js",
+          "sha": "0b2a884e7f99e3604139ea47fc6137c722b1f51b",
+          "size": 684
+        },
+        {
+          "path": "service.html",
+          "sha": "a8c519a681c3c51f6b31d540bacfae64e03557cb",
+          "size": 6306
+        }
+      ]
+    }
+  ]
+}
+

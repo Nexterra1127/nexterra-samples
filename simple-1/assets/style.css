@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@500;600&display=swap');
+.sp-line{display:inline}
+@media(max-width:820px){.sp-line{display:block}}
+h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pretty;line-break:strict}@supports (word-break:auto-phrase){h1,h2,h3,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+:root{--ink:#17313a;--green:#167c78;--green-dark:#0f5f5c;--mint:#eef7f5;--line:#dce5e4;--white:#fff;--serif:'Shippori Mincho',serif;--sans:'Noto Sans JP',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0;color:var(--ink);font-family:var(--sans);line-height:1.8;background:#fff}img{width:100%;display:block;object-fit:cover}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 10vw));margin:auto}.header{height:88px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.96);position:relative;z-index:20;border-bottom:1px solid #edf1f0}.logo{display:flex;align-items:center;gap:14px}.logo b{font-size:25px;letter-spacing:.08em}.logo span{font-size:9px;letter-spacing:.22em;color:var(--green)}.nav{display:flex;align-items:center;gap:42px;font-size:13px;font-weight:600}.nav a{position:relative}.nav a:not(.nav-contact):after{content:"";position:absolute;height:1px;left:0;right:100%;bottom:-8px;background:var(--green);transition:.3s}.nav a:hover:after,.nav a.active:after{right:0}.nav-contact{padding:13px 24px;background:var(--green);color:#fff}.menu{display:none;background:none;border:0;width:42px;height:42px}.menu i{display:block;height:2px;background:var(--ink);margin:9px 0;transition:.3s}.hero{min-height:calc(100vh - 88px);display:grid;grid-template-columns:42% 58%;position:relative}.hero-copy{padding:10vh 6vw;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.eyebrow{font-size:11px;letter-spacing:.25em;color:var(--green);font-weight:700;margin:0 0 24px}.hero h1,.page-hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(48px,5.5vw,84px);line-height:1.35;letter-spacing:.05em;margin:0 0 30px}.hero-copy>p:not(.eyebrow){font-size:15px;margin:0 0 34px}.hero-image{position:relative;overflow:hidden}.hero-image img{height:100%;filter:saturate(.82)}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,49,58,.08),transparent)}.hero-image span{position:absolute;right:5%;bottom:8%;background:#fff;padding:16px 22px;font-family:var(--serif);font-size:18px;line-height:1.7}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:48px;background:var(--green);color:#fff;padding:15px 22px;min-width:235px;font-size:13px;border:0;font-family:inherit;cursor:pointer;transition:.3s}.button:hover{background:var(--green-dark);gap:55px}.scroll{position:absolute;left:28px;bottom:28px;font-size:9px;letter-spacing:.2em;writing-mode:vertical-rl}.section{padding:120px 0}.intro{padding-bottom:70px}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:10vw;align-items:end}.section-head h2,.company-preview h2,.cta h2,.lead h2,.message h2,.contact-info h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4vw,54px);line-height:1.5;letter-spacing:.05em;margin:0}.section-head p{font-size:14px;margin:0}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.service-card{display:grid;grid-template-columns:64px minmax(190px,42%) minmax(0,1fr);min-height:340px;background:#fff;overflow:hidden}.service-card>span{font-family:var(--serif);font-size:25px;color:var(--green);padding:30px 20px}.service-card img{height:100%;transition:.5s}.service-card:hover img{transform:scale(1.03)}.service-card div{padding:48px 26px 28px;min-width:0}.service-card small,.service-detail small{font-size:9px;letter-spacing:.18em;color:var(--green)}.service-card h3{font-family:var(--serif);font-size:26px;margin:5px 0 13px}.service-card p{font-size:12px;margin-bottom:25px}.service-card b{font-size:11px}.strength,.philosophy{background:var(--mint)}.strength-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:70px;border-top:1px solid #bdd3d0}.strength-grid article{padding:42px 5%;border-right:1px solid #bdd3d0}.strength-grid article:last-child{border:0}.strength-grid strong{font-family:var(--serif);color:var(--green);font-size:30px}.strength-grid h3{font-size:17px;margin:20px 0 10px}.strength-grid p{font-size:13px}.flow-list{list-style:none;padding:0;margin:60px 0 0;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.flow-list li{padding:35px;border-right:1px solid var(--line);position:relative}.flow-list li:last-child{border:0}.flow-list b{display:block;color:var(--green);font-family:var(--serif);font-size:28px;margin-bottom:15px}.flow-list span{font-weight:600;font-size:14px}.numbers{background:var(--ink);color:#fff;padding:85px 0;text-align:center}.numbers h2{font-family:var(--serif);font-size:32px}.number-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:45px}.number-grid div{border-right:1px solid #557078}.number-grid div:last-child{border:0}.number-grid b{font-family:var(--serif);font-size:62px;font-weight:500}.number-grid span{font-size:17px}.number-grid p{font-size:12px}.company-preview{display:grid;grid-template-columns:55% 45%;min-height:600px;background:#f5f7f6}.company-preview img{height:100%}.company-preview div{padding:10%;align-self:center}.company-preview p:not(.eyebrow){font-size:14px;margin:25px 0}.text-link{font-weight:600;font-size:13px;border-bottom:1px solid;padding-bottom:6px}.cta{background:var(--green);color:#fff;text-align:center;padding:95px 5vw}.cta .eyebrow{color:#bde2df}.cta h2{margin-bottom:15px}.cta>p:not(.eyebrow){font-size:13px}.button.light{background:#fff;color:var(--green);margin-top:20px}.footer{padding:55px 5vw 25px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}.footer p{font-size:10px;color:#758589;margin-top:18px}.footer nav{display:flex;gap:30px;font-size:11px}.footer small{grid-column:1/-1;text-align:right;font-size:9px;color:#8b989a}.page-hero{padding:100px 10vw 80px;background:var(--mint)}.page-hero h1{font-size:clamp(44px,6vw,72px);margin-bottom:10px}.page-hero>p:last-child{font-size:13px}.lead{display:grid;grid-template-columns:1.1fr .9fr;gap:10vw;align-items:end}.lead p{font-size:14px}.service-detail article{display:grid;grid-template-columns:1fr 1fr;min-height:500px;margin-bottom:100px;background:#f6f8f7}.service-detail article:nth-child(even) img{order:2}.service-detail img{height:100%}.service-detail article>div{padding:10%;align-self:center}.service-detail h2{font-family:var(--serif);font-size:42px;margin:10px 0 20px}.service-detail p,.service-detail li{font-size:13px}.service-detail ul{display:grid;grid-template-columns:1fr 1fr;gap:5px 30px;padding-left:1.2em}.message{display:grid;grid-template-columns:1fr 42%;gap:10%;align-items:center}.message>div>p:not(.eyebrow,.signature){font-size:14px;margin:25px 0}.message img{height:620px;object-position:center 20%}.signature{text-align:right;margin-top:45px;font-size:12px}.signature span{font-family:var(--serif);font-size:22px;margin-left:12px}.profile h2,.philosophy h2{font-family:var(--serif);font-size:40px}.profile dl{margin-top:50px;border-top:1px solid var(--line)}.profile dl div{display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid var(--line);padding:20px}.profile dt{font-weight:600;font-size:13px}.profile dd{margin:0;font-size:13px}.contact-layout{display:grid;grid-template-columns:38% 1fr;gap:10%}.contact-info>p:not(.eyebrow){font-size:13px}.notice{margin-top:40px;padding:25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.notice b{font-size:12px}.notice p{margin:8px 0 0}.contact-form{display:grid;gap:27px}.contact-form label{display:grid;gap:9px;font-size:13px;font-weight:600}.contact-form label>span{display:inline;margin-left:8px;color:var(--green);font-size:10px}.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid var(--line);background:#f7f9f8;padding:15px;font:inherit;outline:none}.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--green)}.contact-form .check{display:flex;align-items:center;font-weight:400}.check input{width:18px}.contact-form .submit{width:100%;max-width:420px}.form-note{font-size:11px;color:#788}.not-found{min-height:100vh;display:grid;place-items:center;padding:10vw;background:var(--mint)}.not-found h1{font-family:var(--serif);font-size:clamp(38px,6vw,70px);line-height:1.5}.not-found>div>p:not(.eyebrow){font-size:13px;margin-bottom:35px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:820px){.header{height:72px;padding:0 5vw;position:sticky;top:0}.logo b{font-size:20px}.logo span{display:none}.nav{position:fixed;inset:72px 0 0;background:#fff;display:flex;flex-direction:column;justify-content:center;gap:34px;font-size:16px;transform:translateX(100%);transition:.35s}.nav.open{transform:none}.nav-contact{padding:15px 40px}.menu{display:block}.menu.open i:first-child{transform:translateY(5.5px) rotate(45deg)}.menu.open i:last-child{transform:translateY(-5.5px) rotate(-45deg)}.hero{min-height:auto;display:flex;flex-direction:column}.hero-copy{padding:14vh 7vw 10vh}.hero h1{font-size:52px}.hero-image{height:55vh}.hero-image span{font-size:14px}.scroll{display:none}.wrap{width:90%}.section{padding:80px 0}.section-head,.lead{grid-template-columns:1fr;gap:25px}.service-grid{grid-template-columns:1fr}.service-card{grid-template-columns:55px 40% 1fr;min-height:290px}.service-card>span{padding:20px 12px;font-size:20px}.service-card div{padding:35px 18px}.service-card h3{font-size:21px}.service-card p{line-height:1.7}.strength-grid{grid-template-columns:1fr}.strength-grid article{border-right:0;border-bottom:1px solid #bdd3d0}.flow-list{grid-template-columns:1fr 1fr}.flow-list li:nth-child(2){border-right:0}.flow-list li{border-bottom:1px solid var(--line)}.number-grid b{font-size:42px}.company-preview{grid-template-columns:1fr;min-height:0}.company-preview img{height:45vh}.company-preview div{padding:70px 7vw}.footer{grid-template-columns:1fr}.footer nav{flex-wrap:wrap}.footer small{text-align:left}.page-hero{padding:75px 7vw 60px}.service-detail article,.service-detail article:nth-child(even){grid-template-columns:1fr;margin-bottom:50px}.service-detail article:nth-child(even) img{order:0}.service-detail img{height:330px}.message{grid-template-columns:1fr}.message img{height:480px;grid-row:1}.profile dl div{grid-template-columns:1fr;gap:5px}.contact-layout{grid-template-columns:1fr}.contact-form{margin-top:40px}}@media(max-width:520px){.service-card{display:block}.service-card>span{position:absolute;color:#fff;z-index:2;text-shadow:0 1px 5px #000}.service-card img{height:220px}.service-card div{padding:25px}.strength-grid{margin-top:40px}.flow-list{grid-template-columns:1fr}.flow-list li{border-right:0}.number-grid{gap:8px}.number-grid b{font-size:35px}.number-grid p{font-size:9px}.message img{height:420px}.service-detail ul{grid-template-columns:1fr}.cta h2{font-size:32px}}
+
+/* Exterior repair specialty sections */
+.symptoms{padding-top:110px}.symptom-grid,.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:60px}.symptom-grid article,.method-grid article{background:#fff;padding:38px}.symptom-grid b,.method-grid b{font-family:var(--serif);font-size:25px;color:var(--green)}.symptom-grid h3,.method-grid h3{font-size:17px;margin:16px 0 8px}.symptom-grid p,.method-grid p{font-size:12px;margin:0}.repair-menu{background:var(--mint)}.building-types h2{font-family:var(--serif);font-size:clamp(30px,4vw,48px)}.type-list{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:50px}.type-list span{padding:24px 10px;border-bottom:1px solid var(--line);font-size:14px;font-weight:600}.type-list span:before{content:"✓";color:var(--green);margin-right:12px}@media(max-width:820px){.symptoms{padding-top:75px}.symptom-grid,.method-grid{grid-template-columns:1fr 1fr;margin-top:40px}.symptom-grid article,.method-grid article{padding:26px 20px}.type-list{grid-template-columns:1fr 1fr}}@media(max-width:520px){.symptom-grid,.method-grid,.type-list{grid-template-columns:1fr}}
+
+/* Representative sample image */
+.sample-photo{position:relative;overflow:hidden}.sample-photo img{height:620px;object-position:center 20%}@media(max-width:820px){.sample-photo{grid-row:1}.sample-photo img{height:480px}}@media(max-width:520px){.sample-photo img{height:420px}}
+
+/* Mobile Japanese line-break refinement 2026-09-15 */
+@media(max-width:600px){
+  h1,h2,h3{text-wrap:balance;line-break:strict;overflow-wrap:normal}
+  p,li,dd{line-break:strict;overflow-wrap:anywhere}
+  h1 br,h2 br,h3 br,.hero-image span br{display:block}
+  .hero h1{font-size:clamp(2.55rem,12vw,3.25rem);line-height:1.38}
+  .section-head h2,.company-preview h2,.cta h2,.lead h2,.message h2,.contact-info h2{font-size:clamp(1.9rem,9vw,2.5rem);line-height:1.55}
+  .page-hero h1{font-size:clamp(2.35rem,11vw,3rem)}
+}
+
+
+/* Meaning-based mobile line breaks — 2026-09-15 */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}.hero-copy>p:not(.eyebrow){font-size:0}.hero-copy>p:not(.eyebrow)::before{content:"外壁を正しく診断し、\A 必要な補修を誠実に届けます。";display:block;white-space:pre-line;font-size:15px;line-height:1.9}}
+
+
+/* Mobile overflow guard — content must stay inside the viewport. */
+@media(max-width:600px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  main,section,article,div{min-width:0}
+  h1,h2,h3{max-width:100%;white-space:normal!important;overflow-wrap:normal}
+  p,li,dd{max-width:100%;overflow-wrap:anywhere}
+  img,video{display:block;max-width:100%!important;height:auto}
+  .service-detail,.service-detail article,.service-grid{max-width:100%;min-width:0}
+  .hero h1{font-size:clamp(2rem,10vw,2.45rem)!important}
+}
+
+
+/* Final mobile width safety net */
+@media(max-width:600px){
+  *,*::before,*::after{box-sizing:border-box}
+  body{position:relative;overflow-x:clip}
+  main>*{max-width:100%}
+  section>*,article>*,.wrap>*{min-width:0;max-width:100%}
+  img,picture,video,iframe{max-width:100%!important}
+  input,select,textarea,button{max-width:100%}
+  table{display:block;max-width:100%;overflow-x:auto}
+}
+
+
+/* Shared Japanese line-breaking rules: preserve phrases without wasting width. */
+html{line-break:strict}
+h1,h2,h3,.lead{text-wrap:balance;overflow-wrap:normal;word-break:normal}
+p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
+@supports (word-break:auto-phrase){h1,h2,h3,.lead,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+
+
+/* Desktop semantic line groups: keep each Japanese phrase intact. */
+@media(min-width:821px){
+  .pc-semantic-title{font-size:clamp(42px,3.2vw,48px)!important}
+  .pc-semantic-title>span{display:inline-block;white-space:nowrap;text-wrap:nowrap}
+}
+
+
+/* Stronger fluid curve: visible reduction on 375px and smaller screens. */
+@media(max-width:600px){
+  .hero h1{
+    font-size:clamp(34px,calc(23.3vw - 51.9px),44px)!important;
+  }
+  .section-head h2,
+  .company-preview h2,
+  .cta h2,
+  .lead h2,
+  .message h2,
+  .contact-info h2,
+  .building-types h2{
+    font-size:clamp(29px,calc(23.3vw - 55.9px),40px)!important;
+  }
+  .page-hero h1{
+    font-size:clamp(34px,calc(30vw - 74px),48px)!important;
+  }
+}
+
+/* User-defined Japanese phrase units: wrap only between semantic chunks. */
+.phrase-heading{
+  white-space:normal!important;
+  text-wrap:wrap!important;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+.phrase-heading>span{
+  display:inline-block!important;
+  width:auto!important;
+  max-width:100%;
+  white-space:nowrap!important;
+  text-wrap:nowrap!important;
+}
+.phrase-heading>wbr{
+  display:inline;
+}

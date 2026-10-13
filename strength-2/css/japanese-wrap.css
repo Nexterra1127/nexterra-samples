@@ -1,0 +1,23 @@
+/* 日本語を文節に近い位置で自然に折り返す共通ルール */
+html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hyphens:none}
+
+@supports (word-break:auto-phrase){
+  html[lang="ja"],body{word-break:auto-phrase}
+  p,li,dt,dd,label,.hero-text,.lead,.page-hero-title p,.manifesto-copy p,.service-run-item p,.company-copy p,.service-column p,.business-node p,.form-note{word-break:auto-phrase;text-wrap:pretty}
+  h1,h2,h3,.display-title{word-break:auto-phrase;text-wrap:balance}
+}
+
+.jp-flow{line-break:strict;overflow-wrap:normal;hyphens:none}
+@supports not (word-break:auto-phrase){
+  .jp-flow{word-break:keep-all}
+  .jp-flow .jp-phrase{display:inline-block;max-width:100%;white-space:nowrap}
+  .jp-flow wbr{display:inline}
+}
+@supports (word-break:auto-phrase){
+  .jp-flow .jp-phrase{display:inline;max-width:none;white-space:normal}
+  .jp-flow wbr{display:none}
+}
+
+.hero-content,.fact-cell,.manifesto-grid>*,.service-run-item>*,.photo-cut-copy,.page-hero>*,.company-lead>*,.company-row>*,.service-column,.business-node>*,.contact-stage>*,.form-grid>*,.cta-inner>*{min-width:0}
+
+@media(max-width:760px){p,li,dt,dd,label{max-width:100%}}

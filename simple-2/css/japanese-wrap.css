@@ -1,0 +1,41 @@
+/* 消防施工HPと同じ意味単位の改行。文字サイズは既存CSSを維持する。 */
+html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hyphens:none}
+@supports(word-break:auto-phrase){
+  p,li,dt,dd,label{word-break:auto-phrase;text-wrap:pretty}
+  h3{word-break:auto-phrase;text-wrap:balance}
+}
+
+/* 外側の意味のまとまりを優先し、収まらない時だけ内側の区切りを使う。 */
+h1.jp-flow,h2.jp-flow{
+  min-width:0;max-width:100%;line-break:strict;word-break:normal;
+  overflow-wrap:normal;hyphens:none;text-wrap:wrap;
+}
+h1.jp-flow .jp-phrase,h2.jp-flow .jp-phrase{
+  display:inline-block;max-width:100%;white-space:normal;
+  word-break:keep-all;overflow-wrap:break-word;vertical-align:baseline;
+}
+h1.jp-flow .jp-part,h2.jp-flow .jp-part{
+  display:inline-block;max-width:100%;white-space:normal;
+  word-break:keep-all;overflow-wrap:anywhere;vertical-align:baseline;
+}
+h1.jp-flow wbr,h2.jp-flow wbr{display:inline}
+/* 既存の「h1内のspanをすべてオレンジ・ブロック表示」から見出しの色を保護する。 */
+.hero h1.jp-flow span{color:inherit}
+.hero h1.jp-flow .jp-accent{color:var(--orange)}
+
+.hero-sign,.header-main>*,.service-line>*,.promise-inner>*,
+.message-block,.about-point,.company-row>*,.work-block>*,
+.contact-rail>*,.form-grid>*,.contact-cta-inner>*{min-width:0}
+.contact-rail strong,.company-row dd{overflow-wrap:anywhere}
+.contact-form input,.contact-form textarea{min-width:0;max-width:100%}
+
+/* PCは文字を縮めず、文章側の幅を活用する。 */
+@media(min-width:981px){
+  :root{--max:1280px}
+  .promise-inner{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:48px}
+  .promise .section-title{max-width:100%}
+}
+@media(max-width:760px){
+  .menu-button{flex-shrink:0}
+  p,li,dt,dd,label{max-width:100%;overflow-wrap:break-word}
+}

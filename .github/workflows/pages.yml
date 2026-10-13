@@ -1,0 +1,37 @@
+name: Validate and publish samples
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate references
+        run: python scripts/validate.py
+      - name: Check JavaScript syntax
+        run: find simple-* strength-* trust-* modern-* craftsman-* -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Prepare public files
+        run: |
+          mkdir _site
+          cp -R simple-* strength-* trust-* modern-* craftsman-* _site/
+          cp index.html 404.html CNAME .nojekyll _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

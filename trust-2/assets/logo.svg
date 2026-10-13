@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 96" role="img" aria-labelledby="title desc">
+  <title id="title">○○○○株式会社 サンプルロゴ</title>
+  <desc id="desc">給排水設備の配管と水の流れをイメージした架空ロゴ</desc>
+  <rect width="460" height="96" fill="none"/>
+  <g transform="translate(6 11)" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M8 12h42v22h20v28H38" stroke="#17324a" stroke-width="9"/>
+    <path d="M8 62h24V38h28V12" stroke="#2e6691" stroke-width="9"/>
+    <rect x="0" y="4" width="12" height="16" fill="#7ea7c5" stroke="none"/>
+    <rect x="62" y="56" width="12" height="16" fill="#7ea7c5" stroke="none"/>
+  </g>
+  <g fill="#17324a">
+    <text x="102" y="43" font-family="'Yu Gothic','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="28" font-weight="700" letter-spacing="1">○○○○株式会社</text>
+    <text x="104" y="68" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3.3">WATERWORKS / KANSAI</text>
+  </g>
+</svg>

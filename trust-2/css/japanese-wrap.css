@@ -1,0 +1,80 @@
+/* 消防施工HPと共通の方針：見出しは意味の塊を優先し、本文は自然に折り返す。 */
+html[lang="ja"],body{line-break:strict;word-break:normal;overflow-wrap:normal;hyphens:none}
+html,body{width:100%;max-width:100%}
+.site-header,main,.site-footer,main>section{width:100%;max-width:100%}
+
+@supports (word-break:auto-phrase){
+  p,li,dt,dd,label,.hero-text,.section-lead,.page-hero p,.service-panel p,.business-entry p,.about-lead p,.form-note{word-break:auto-phrase;text-wrap:pretty}
+  h1,h2,h3,.section-title,.page-title,.editorial-copy blockquote{word-break:auto-phrase;text-wrap:balance}
+}
+
+.jp-flow{line-break:strict;hyphens:none}
+
+/* H1/H2と大きな引用文は、ブラウザのauto-phrase対応にかかわらず同じ指定を使う。
+   .jp-phrase全体が入る幅ではひとかたまりのまま、入らなければwbrで次行へ送る。 */
+h1.jp-flow,h2.jp-flow,blockquote.jp-flow{
+  min-width:0;
+  max-width:100%;
+  word-break:normal;
+  overflow-wrap:normal;
+  text-wrap:wrap;
+}
+h1.jp-flow .jp-phrase,h2.jp-flow .jp-phrase,blockquote.jp-flow .jp-phrase{
+  display:inline-block;
+  max-width:100%;
+  white-space:normal;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  vertical-align:baseline;
+}
+/* 長い塊には内側の意味区切りを用意する。
+   極端に狭い幅や文字拡大で内側の塊も入らない場合だけ、文字の折り返しを許可する。 */
+h1.jp-flow .jp-part,h2.jp-flow .jp-part,blockquote.jp-flow .jp-part{
+  display:inline-block;
+  max-width:100%;
+  white-space:normal;
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+}
+h1.jp-flow wbr,h2.jp-flow wbr,blockquote.jp-flow wbr{display:inline}
+
+/* 本文に見出し用のnowrapを引き継がない。Safariなどでも文章を画面内に収める。 */
+.jp-flow:not(h1):not(h2):not(blockquote){word-break:normal;overflow-wrap:break-word}
+.jp-flow:not(h1):not(h2):not(blockquote) .jp-phrase{display:inline;max-width:none;white-space:normal}
+.jp-flow:not(h1):not(h2):not(blockquote) wbr{display:inline}
+@supports (word-break:auto-phrase){
+  .jp-flow:not(h1):not(h2):not(blockquote){word-break:auto-phrase}
+  .jp-flow:not(h1):not(h2):not(blockquote) wbr{display:none}
+}
+
+/* Grid/Flexの中身や長い連絡先が、カラム自体の幅を押し広げないようにする。 */
+.brand-row>*,.hero-grid>*,.hero-links>*,.fact-item,.editorial-intro>*,
+.service-index-row>*,.statement-inner>*,.page-hero-grid>*,.about-lead>*,
+.company-row>*,.service-panel>*,.business-entry>*,.contact-stage>*,
+.form-grid>*,.contact-cta-inner>*,.footer-main>*,.footer-bottom>*{min-width:0}
+p,li,dt,dd,label,.statement-aside,.business-entry aside,.service-index-row .aside{overflow-wrap:break-word}
+.company-row dd,.contact-data strong,.form-note{overflow-wrap:anywhere}
+.chapter{max-width:100%;overflow-wrap:anywhere}
+.chapter::before{flex:0 0 34px}
+.contact-form input,.contact-form textarea{min-width:0;max-width:100%}
+
+/* PCは見出しを縮めず、文字側のカラムと大画面の横幅を使う。 */
+@media(min-width:981px){
+  :root{--max:1280px}
+  .hero-grid{grid-template-columns:minmax(0,1.4fr) minmax(320px,.6fr)}
+  .hero-copy{padding-right:48px}
+  .hero-copy h1{max-width:100%}
+  .hero-diagram{padding-left:36px}
+  .hero-diagram::before{left:36px}
+}
+
+/* スマホ・タブレットでもフォントサイズは元のデザインのまま。 */
+@media(max-width:980px){
+  .hero-grid,.statement-inner,.about-lead,.contact-stage{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:760px){
+  .brand-row{grid-template-columns:minmax(0,1fr) auto}
+  .fact-row,.editorial-intro,.service-index-row,.page-hero-grid,.company-row,
+  .service-panel,.business-entry,.form-grid,.contact-cta-inner,.footer-main{grid-template-columns:minmax(0,1fr)}
+  p,li,dt,dd,label{max-width:100%;word-break:normal;overflow-wrap:break-word}
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">消防設備点検のイメージ</title>
+  <desc id="desc">消防設備、建物内設備、点検作業員を抽象的に描いたサンプルビジュアル</desc>
+  <rect width="1600" height="900" fill="#d9ddda"/>
+  <rect y="560" width="1600" height="340" fill="#bfc6c2"/>
+  <rect x="860" y="120" width="560" height="580" fill="#eef0ed" stroke="#89928e" stroke-width="4"/>
+  <rect x="930" y="210" width="170" height="240" fill="#fff" stroke="#65716d" stroke-width="4"/>
+  <rect x="1145" y="210" width="205" height="240" fill="#fff" stroke="#65716d" stroke-width="4"/>
+  <line x1="860" y1="520" x2="1420" y2="520" stroke="#65716d" stroke-width="5"/>
+  <line x1="860" y1="620" x2="1420" y2="620" stroke="#65716d" stroke-width="5"/>
+  <rect x="1000" y="548" width="85" height="58" fill="#26333a"/>
+  <circle cx="1020" cy="577" r="9" fill="#e86f2f"/>
+  <circle cx="1044" cy="577" r="9" fill="#f4c95d"/>
+  <circle cx="1068" cy="577" r="9" fill="#9daf9f"/>
+  <g transform="translate(1260 480)">
+    <rect x="0" y="38" width="70" height="120" rx="22" fill="#e86f2f"/>
+    <rect x="18" y="4" width="34" height="42" rx="8" fill="#26333a"/>
+    <rect x="21" y="70" width="28" height="22" fill="#fff"/>
+    <rect x="30" y="156" width="10" height="55" fill="#26333a"/>
+    <rect x="9" y="202" width="52" height="12" fill="#26333a"/>
+  </g>
+  <g transform="translate(430 190)">
+    <circle cx="130" cy="85" r="52" fill="#26333a"/>
+    <path d="M82 78c15-46 80-63 111-10H75Z" fill="#f4c95d"/>
+    <rect x="76" y="74" width="118" height="18" rx="6" fill="#e86f2f"/>
+    <path d="M82 150h98l56 210H40l42-210Z" fill="#26333a"/>
+    <rect x="98" y="178" width="70" height="38" fill="#e86f2f"/>
+    <path d="M54 202 5 345" stroke="#26333a" stroke-width="28" stroke-linecap="round"/>
+    <path d="M187 205 275 282" stroke="#26333a" stroke-width="28" stroke-linecap="round"/>
+    <rect x="250" y="258" width="95" height="72" rx="8" fill="#fff" stroke="#26333a" stroke-width="6"/>
+    <path d="M268 278h58M268 296h42" stroke="#e86f2f" stroke-width="6"/>
+    <path d="M80 357 53 530M168 357l32 173" stroke="#26333a" stroke-width="32" stroke-linecap="round"/>
+    <rect x="24" y="514" width="76" height="25" fill="#17252c"/>
+    <rect x="177" y="514" width="82" height="25" fill="#17252c"/>
+  </g>
+  <g transform="translate(735 100)">
+    <circle cx="0" cy="0" r="58" fill="#fff" stroke="#26333a" stroke-width="7"/>
+    <circle cx="0" cy="0" r="23" fill="#e86f2f"/>
+    <path d="M-33 43h66" stroke="#26333a" stroke-width="8"/>
+  </g>
+  <path d="M720 0v76M690 75h60" stroke="#26333a" stroke-width="7"/>
+  <path d="M704 82c7 18 13 27 16 27s9-9 16-27" fill="none" stroke="#e86f2f" stroke-width="5"/>
+  <g opacity=".22" stroke="#26333a" stroke-width="2">
+    <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <rect x="0" y="0" width="1600" height="18" fill="#26333a"/>
+  <g transform="translate(1180 28)">
+    <rect width="230" height="34" fill="#f4c95d"/>
+    <path d="M0 34 34 0M52 34 86 0M104 34 138 0M156 34 190 0M208 34 230 12" stroke="#26333a" stroke-width="12"/>
+  </g>
+</svg>
